@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Protest Riot", sans-serif;
+  font-family: "Sacramento", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -179,6 +179,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
   color: #fff;
+}
+.fh5co-nav ul li.has-dropdown:hover .dropdown, .fh5co-nav ul li.has-dropdown:focus .dropdown {
+  visibility: visible;
+  opacity: 1;
 }
 .fh5co-nav ul li.btn-cta a {
   color: #F14E95;
@@ -781,7 +785,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Protest Riot", sans-serif;
+  font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -992,7 +996,7 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Protest Riot", sans-serif;
+  font-family: "Sacramento", Arial, serif;
   color: #F14E95;
   font-size: 30px;
 }
@@ -1100,7 +1104,7 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Protest Riot", sans-serif;
+  font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
