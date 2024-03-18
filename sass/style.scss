@@ -448,6 +448,8 @@ figure {
 	background-repeat: no-repeat;
 	position: relative;
 	width: 100%;
+	background-image: url('../Pics/img-3.jpeg');
+
 
 	.overlay {
 		z-index: 0;
@@ -496,6 +498,12 @@ figure {
 				height: 400px;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#fh5co-header {
+		background-image: url('../Pics/img-2.jpeg');
 	}
 }
 
@@ -1175,27 +1183,6 @@ form {
 
 	@media screen and (max-width: $screen-sm) {
 		width: 100%;
-	}
-}
-
-.heart {
-	position: absolute;
-	top: 4em;
-	left: 0;
-	right: 0;
-	z-index: 99;
-	animation: pulse 1s ease infinite;
-
-	i {
-		font-size: 20px;
-		background: $brand-white;
-		padding: 20px;
-		color: $brand-primary;
-		@include border-radius(50%);
-	}
-
-	@media screen and (max-width: $screen-sm) {
-		display: none;
 	}
 }
 
@@ -2117,4 +2104,25 @@ form {
 	position: relative;
 	bottom: 5px;
 	left: 5px;
+}
+
+.heart {
+	position: absolute;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background-image: url('https://pngimg.com/uploads/heart/heart_PNG51335.png');
+	background-size: cover;
+	animation: heartFall linear infinite;
+	animation-duration: 5s;
+}
+
+@keyframes heartFall {
+	0% {
+		transform: translateY(-100vh);
+	}
+
+	100% {
+		transform: translateY(100vh);
+	}
 }

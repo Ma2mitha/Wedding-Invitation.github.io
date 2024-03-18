@@ -67,33 +67,6 @@ Facebook: 		https://www.facebook.com/fh5co
 <script src="js/respond.min.js"></script>
 <![endif]-->
 
-<style>
-    /* Remove overflow: hidden; to enable scrolling */
-    body {
-        margin: 0;
-        /* overflow: hidden; */
-    }
-
-    .heart {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-image: url('https://pngimg.com/uploads/heart/heart_PNG51335.png');
-        background-size: cover;
-        animation: heartFall linear infinite;
-        animation-duration: 5s;
-    }
-
-    @keyframes heartFall {
-        0% {
-            transform: translateY(-100vh);
-        }
-        100% {
-            transform: translateY(100vh);
-        }
-    }
-</style>
-
 </head>
 <body>
 
@@ -121,7 +94,7 @@ Facebook: 		https://www.facebook.com/fh5co
     </div>
 </nav>
 
-<header id="fh5co-header" class="fh5co-cover" role="presentation" style="background-image:url(Pics/img-3.jpeg);"  data-stellar-background-ratio="0.5">
+<header id="fh5co-header" class="fh5co-cover" role="presentation"  data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -279,20 +252,7 @@ Facebook: 		https://www.facebook.com/fh5co
 <!-- Main -->
 <script src="js/main.js"></script>
 
-<script>
-// Start the heart rain effect automatically
-function createHeart() {
-    const heart = document.createElement("div");
-    heart.classList.add("heart");
-    heart.style.left = Math.random() * window.innerWidth + "px";
-    document.body.appendChild(heart);
-    setTimeout(() => {
-        heart.remove();
-    }, 7000);
-}
-
-setInterval(createHeart, 100);
-</script>
+<script src="js/fall.js"></script>
 
 <script>
 var d = new Date(new Date('2024-04-21').getTime() + 200 * 120 * 120 * 2000);

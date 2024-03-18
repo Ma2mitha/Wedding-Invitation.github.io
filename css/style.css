@@ -281,6 +281,7 @@ figure {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  background-image: url("../Pics/img-3.jpeg");
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -333,6 +334,11 @@ figure {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #fh5co-header {
+    background-image: url("../Pics/img-2.jpeg");
+  }
+}
 #fh5co-counter,
 #fh5co-event {
   height: 850px;
@@ -976,27 +982,6 @@ form label {
 @media screen and (max-width: 768px) {
   .couple-wrap {
     width: 100%;
-  }
-}
-
-.heart {
-  position: absolute;
-  top: 4em;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  animation: pulse 1s ease infinite;
-}
-.heart i {
-  font-size: 20px;
-  background: #fff;
-  padding: 20px;
-  color: #F14E95;
-  border-radius: 50%;
-}
-@media screen and (max-width: 768px) {
-  .heart {
-    display: none;
   }
 }
 
@@ -1739,4 +1724,24 @@ form label {
   position: relative;
   bottom: 5px;
   left: 5px;
+}
+
+.heart {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://pngimg.com/uploads/heart/heart_PNG51335.png");
+  background-size: cover;
+  animation: heartFall linear infinite;
+  animation-duration: 5s;
+}
+
+@keyframes heartFall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }/*# sourceMappingURL=style.css.map */
