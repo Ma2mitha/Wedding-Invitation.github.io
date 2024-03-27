@@ -217,6 +217,8 @@ figure {
 		padding: 0;
 		line-height: 40px;
 		font-family: $font-secondary;
+		// background-image: url('../Pics/rs2-removebg-preview.png');
+		// height: 80px;
 	}
 
 	a {
@@ -503,7 +505,7 @@ figure {
 
 @media screen and (max-width: 768px) {
 	#fh5co-header {
-		background-image: url('../Pics/img-2.jpeg');
+		background-image: url('../Pics/img-4.jpeg');
 	}
 }
 
@@ -1005,7 +1007,7 @@ form {
 
 		h1 {
 			margin-bottom: 0px;
-			font-size: 100px;
+			font-size: 70px;
 			line-height: 1.5;
 			font-family: $font-secondary;
 
