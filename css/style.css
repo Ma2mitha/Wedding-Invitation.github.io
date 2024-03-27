@@ -110,6 +110,11 @@ figure {
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
 }
+@media only screen and (max-width: 768px) {
+  .fh5co-nav #fh5co-logo a img {
+    height: 50px; /* Decreased height for smaller screens */
+  }
+}
 .fh5co-nav a {
   padding: 5px 10px;
   color: #fff;
@@ -1310,6 +1315,10 @@ form label {
   margin-bottom: 0;
 }
 
+#fh5co-footer {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(204, 251, 244) 100%);
+}
 @media screen and (max-width: 768px) {
   #fh5co-footer .copyright .pull-left,
   #fh5co-footer .copyright .pull-right {

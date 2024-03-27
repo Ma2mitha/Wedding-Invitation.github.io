@@ -217,8 +217,17 @@ figure {
 		padding: 0;
 		line-height: 40px;
 		font-family: $font-secondary;
-		// background-image: url('../Pics/rs2-removebg-preview.png');
-		// height: 80px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		#fh5co-logo {
+			a {
+				img {
+					height: 50px; /* Decreased height for smaller screens */
+				}
+			}
+			
+		}
 	}
 
 	a {
@@ -1574,7 +1583,8 @@ form {
 }
 
 #fh5co-footer {
-
+	background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(204,251,244,1) 100%);
 	.copyright {
 
 		.pull-left,
