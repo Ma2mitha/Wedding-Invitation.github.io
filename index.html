@@ -323,25 +323,17 @@
 
     <script>
       //var d = new Date(new Date('2024-04-21').getTime() + 200 * 120 * 120 * 2000);
-      var currentDate = new Date();
-      var targetDate = new Date("2024-04-23");
-      var timeDifference = targetDate.getTime() - currentDate.getTime();
-      console.log("time", timeDifference);
-      var newTargetDate = new Date(currentDate.getTime() + timeDifference);
-      console.log("times", newTargetDate);
-      simplyCountdown(".simply-countdown-one", {
-        year: newTargetDate.getFullYear(),
-        month: newTargetDate.getMonth() + 1,
-        day: newTargetDate.getDate(),
-      });
+       var currentDate = new Date();
+       var targetDate = new Date("2024-04-21T11:30:00"); // Set the target date to April 21st, 2024, 6:00 AM
 
-      //jQuery example
-      $("#simply-countdown-losange").simplyCountdown({
-        year: newTargetDate.getFullYear(),
-        month: newTargetDate.getMonth() + 1,
-        day: newTargetDate.getDate(),
-        enableUtc: false,
-      });
+    simplyCountdown(".simply-countdown-one", {
+      year: targetDate.getFullYear(),
+      month: targetDate.getMonth() + 1,
+      day: targetDate.getDate(),
+      hours: targetDate.getHours(),
+      minutes: targetDate.getMinutes(),
+      seconds: targetDate.getSeconds()
+    });
     </script>
   </body>
 </html>
